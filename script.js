@@ -33,18 +33,6 @@ class Square extends Rectangle {
     }
 }
 
-// Example Usage
-const rectangle = new Rectangle(5, 10);
-const square = new Square(7);
-
-const outputDiv = document.getElementById('output');
-outputDiv.innerHTML += `<strong>Rectangle:</strong><br>`;
-outputDiv.innerHTML += `Width: ${rectangle.width}<br>`;
-outputDiv.innerHTML += `Height: ${rectangle.height}<br>`;
-outputDiv.innerHTML += `Area: ${rectangle.getArea()}<br><br>`;
-
-outputDiv.innerHTML += `<strong>Square:</strong><br>`;
-outputDiv.innerHTML += `Width: ${square.width}<br>`;
-outputDiv.innerHTML += `Height: ${square.height}<br>`;
-outputDiv.innerHTML += `Area: ${square.getArea()}<br>`;
-outputDiv.innerHTML += `Perimeter: ${square.getPerimeter()}<br>`;
+// Export classes to the global scope
+window.Rectangle = Rectangle;
+window.Square = Square;
